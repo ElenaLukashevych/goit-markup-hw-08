@@ -1,0 +1,32 @@
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__item {
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  @include centeredFlex;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid $svg-start-color;
+  border-radius: 4px;
+
+  fill: $svg-start-color;
+
+  transition: fill $duration $cubic, border $duration $cubic;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}
