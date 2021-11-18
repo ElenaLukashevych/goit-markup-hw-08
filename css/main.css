@@ -912,6 +912,10 @@ header {
   margin-bottom: 20px;
 }
 
+.form__box {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1199px) {
   .footer__form {
     text-align: center;
