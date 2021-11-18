@@ -1,7 +1,12 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+        justify-content: center;
+
+  }
 }
 
 .filter__item:not(:last-child) {

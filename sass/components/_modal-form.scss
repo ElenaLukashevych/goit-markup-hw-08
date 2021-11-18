@@ -19,7 +19,7 @@
 .form__field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 
   transition: border $duration $cubic, fill $duration $cubic;
@@ -67,11 +67,18 @@
 }
 
 .checkbox__label {
+
+@media screen and (max-width: $desktop) {
+  font-size: 12px;
+  line-height: 0.85;
+}
+
  @include centeredFlex;
+
+
 
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
   margin-bottom: 30px;
 }
@@ -111,7 +118,7 @@
   text-decoration-line: underline;
 
   color: $accent-color;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .form__btn {

@@ -1,28 +1,46 @@
 header {
   border-bottom: 1px solid #ececec;
+position: relative;
 }
 
 .header__container {
-  display: flex;
+  @media screen and (min-width: 768px) {
+      display: flex;
+
+  }
 }
 
 
-.site-nav,
-.nav {
-  display: flex;
+.nav, .site-nav__logo, .site-nav {
+
+  @media screen and (min-width: 768px) {
+ display: flex;
   align-items: center;
+  }
+ 
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+
+  }
 }
 
 .nav__link,
 .contacts__link {
   display: block;
 
-  padding-top: 32px;
+  @media screen and (min-width: 768px) {
+ padding-top: 32px;
   padding-bottom: 32px;
+
+  
+  }
+
+ 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -37,12 +55,21 @@ header {
 }
 }
 
-
+.nav__link {
+  @media screen and (max-width: 767px) {
+ font-size: 40px;
+line-height: 0.85;
+}
+  }
 
 .contacts {
-  display: flex;
+
+   @media screen and (min-width: 1200px) {
+display: flex;
   margin-left: auto;
   align-items: center;
+  }
+  
 }
 
 .contacts__item:not(:last-child) {
@@ -50,23 +77,49 @@ header {
 }
 
 .contacts__link {
-  @include centeredFlex;
+@media screen and (max-width: 767px) {
+ font-weight: 500;
+font-size: 24px;
+line-height: 0.85;
+}
+
+
+
+  @media screen and (min-width: 768px) {
+        @include centeredFlex;
+  }
 
   color: $primary-text-color;
   fill: $primary-text-color;
+}
+
+.contacts__link--accent {
+
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+line-height: 0.85;
+
+
+color: $accent-color;
+  }
 }
 
 .contacts__icon {
   margin-right: 10px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__link--current {
   color: $accent-color;
   position: relative;
 
-  &::after {
+   @media screen and (min-width: 768px) {
+&::after {
   position: absolute;
   display: block;
   content: '';
@@ -78,7 +131,29 @@ header {
 
   background: $accent-color;
   border-radius: 2px;
-}
+}  }
+
+  
 }
 
+.social-mobile {
+  display: flex;
 
+  
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.social-mobile__item {
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+
+letter-spacing: 0.02em;
+
+color: $accent-color;
+&:not(:last-child) {
+margin-right: 20px;  }
+}
