@@ -161,6 +161,8 @@ header {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .contacts {
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -244,12 +246,6 @@ header {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav__link--current::after {
-    bottom: -7px;
-  }
 }
 
 .logo {

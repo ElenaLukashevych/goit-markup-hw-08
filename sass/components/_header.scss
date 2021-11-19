@@ -45,11 +45,11 @@ header {
   }
 }
 
-
-
 .contacts {
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   @media screen and (max-width: 768px) {
     display: none;
@@ -67,7 +67,6 @@ header {
       margin-bottom: 10px;
     }
   }
-  
 }
 
 .contacts__item:not(:last-child) {
@@ -109,9 +108,5 @@ header {
 
     background: $accent-color;
     border-radius: 2px;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      bottom: -7px;
-    }
   }
 }
