@@ -8,6 +8,11 @@
   right: 15px;
   cursor: pointer;
 
+   &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -68,25 +73,21 @@
 
 .mobile-nav__item {
   &:not(:last-child) {
-margin-bottom: 32px;
+    margin-bottom: 32px;
   }
 }
 
 .mobile-nav__link {
-font-weight: 500;
-font-size: 40px;
-line-height: 0.85;
-letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
 
-color: $title-text-color;
+  color: $title-text-color;
 
-
-
-&--current {
-  color: $accent-color;
-}
-
-
+  &--current {
+    color: $accent-color;
+  }
 }
 
 .mobile-contacts {
@@ -94,24 +95,22 @@ color: $title-text-color;
 }
 
 .mobile-contacts__item {
-
   &:not(:last-child) {
-margin-bottom: 32px;
+    margin-bottom: 32px;
   }
 }
 
 .mobile-contacts__link {
-font-weight: 500;
-font-size: 24px;
-line-height: 0.85;
-letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
 
-&--accent {
-font-size: 34px;
+  &--accent {
+    font-size: 34px;
 
-color: $accent-color;
-}
-
+    color: $accent-color;
+  }
 }
 
 .social-mobile {
@@ -122,8 +121,17 @@ color: $accent-color;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-
-   &:not(:last-child) {
-margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
   }
+}
+
+.social-mobile__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0.81;
+
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
 }
